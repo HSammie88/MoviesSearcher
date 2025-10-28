@@ -1,10 +1,11 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import colors from '../configs/colors.json'
 
 const Context = createContext()
 
 function Wrapper({children}){
-    return <Context.Provider value={{colors}}>
+    const [movieName, setMovieName] = useState(null)
+    return <Context.Provider value={{colors, setMovieName, movieName}}>
         {children}
     </Context.Provider>
 }

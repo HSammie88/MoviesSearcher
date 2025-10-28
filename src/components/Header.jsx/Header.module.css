@@ -16,14 +16,6 @@
     margin-left: 20px;
     transform: rotate(3deg);
 }
-.header-container h1::after{
-    content: "";
-    display: block;
-    width: 220px;
-    margin: auto;
-    height: 2px;
-    background-color: white;
-}
 
 .href-container{
     width: 40%;
@@ -37,7 +29,7 @@
     font-weight: 900;
     transition: transform .5s;
 }
-.href-container a:visited{
+.href-container a:visited, .href-container a:link{
     color: #ffffff;
 }
 .href-container a:hover{
@@ -57,20 +49,22 @@
     width: 300px;
     font-size: 20px;
     padding: 0 5px;
-    border-radius: 100px;
+    border-radius: 5px;
     border: none;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
+    transform-origin: right center;
 }
 
 .search-button{
     width: 40px;
     height: 40px;
-    border-radius: 100px;
+    border-radius: 5px;
     border: none;
     position: absolute;
     right: 0;
     cursor: pointer;
+    transition: background-color .5s;
 }
 .search-button img{
     width: 25px;
