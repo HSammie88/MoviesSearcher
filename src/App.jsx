@@ -1,7 +1,9 @@
 import './App.css'
+import Header from './components/Header.jsx/Header'
+import {Wrapper} from './components/Wrapper'
 
-import default function App(){
-  return <div>
-  
-  </div>
+export default function App(){
+  return <Wrapper>
+    <Header/>
+  </Wrapper>
 }
