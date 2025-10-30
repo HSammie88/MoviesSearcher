@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 import './App.css'
-import Header from './components/Header.jsx/Header'
+import Header from './components/Header/Header'
 import {Wrapper} from './components/Wrapper'
 import MainPage from './components/MainPage/MainPage'
 import TopPage from './components/TopPage/TopPage'
