@@ -2,7 +2,7 @@ import style from './Header.module.css'
 import searchIcon from '../../assets/images/magnifier.png'
 import {Context} from '../Wrapper'
 import { useContext, useRef, useState } from 'react'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 // eslint-disable-next-line no-unused-vars
 import { useSpring, config, animated } from '@react-spring/web'
 
@@ -11,6 +11,7 @@ export default function Header(){
     const [inputFolded, setInputFolded] = useState(true)
     const [isHovered, setIsHovered] = useState(false)
     const inputRef = useRef()
+    const navigate = useNavigate()
 
     const inputSprings = useSpring({
         transform: inputFolded ? 'scaleX(0)' : 'scaleX(1)',
@@ -35,6 +36,7 @@ export default function Header(){
             setTimeout(()=>{
                 setInputFolded(true)
                 inputRef.current.value = ''
+                navigate('/find')
             }, 200)
         }
     }

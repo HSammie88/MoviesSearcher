@@ -1,14 +1,17 @@
 {
-    "headerBackground": "#141414",
-    "headerText": "#ffffff",
-    "textPrimary": "#ffffff",
-    "textSecondary": "#b3b3b3",
-    "button": {
-      "background": "#e50914",
-      "text": "#ffffff",
-      "border": "#e50914",
-      "hoverBackground": "#ff6b6b",
-      "hoverText": "#ffffff",
-      "hoverBorder": "#ff6b6b"
-    }
+  "headerBackground": "#141414",
+  "headerText": "#ffffff",
+  "textPrimary": "#ffffff", 
+  "textSecondary": "#b3b3b3",
+  
+  "cardBackground": "#1f1f1f",
+  
+  "button": {
+    "background": "#e50914",
+    "text": "#ffffff",
+    "border": "#e50914",
+    "hoverBackground": "#ff6b6b",
+    "hoverText": "#ffffff",
+    "hoverBorder": "#ff6b6b"
   }
+}

@@ -1,7 +1,7 @@
 import apiConfig from '../configs/api.json'
 
 export async function getDataByName(name){
-    const {key} = JSON.parse(apiConfig)
+    const {key} = apiConfig
     const fullUrl = `http://www.omdbapi.com/?apikey=${key}&t=${name}`
 
     const response = await fetch(fullUrl)
