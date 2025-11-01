@@ -42,6 +42,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     padding: 10px;
 }
@@ -57,4 +58,17 @@
 .movie-description-container{
     grid-column: 2;
     grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.text-container-main{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.text-container-plot{
+    grid-row: 1;
 }
